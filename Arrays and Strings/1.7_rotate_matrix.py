@@ -22,11 +22,12 @@ def rotate_matrix(matrix: list[list[int]]) -> list[list[int]]:
             # Move top to right.
             matrix[j][indexOffset - i] = temp
 
-    print(matrix)
+    return matrix
 
 mat: list[list[int]] = [[1, 2, 3, 4],
            [5, 6, 7, 8],
            [9, 10, 11, 12],
            [13, 14, 15, 16]]
 
-rotate_matrix(mat)
+result: list[list[int]] = rotate_matrix(mat)
+print(result)
