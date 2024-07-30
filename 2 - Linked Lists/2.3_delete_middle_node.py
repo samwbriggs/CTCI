@@ -4,10 +4,10 @@
 import node_class
 
 
-def delete_middle_node(node: node_class) -> None:
-    if node is None or node.nextNode is None:
+def delete_middle_node(node: node_class.Node) -> None:
+    if node is None or node.next_node is None:
         return
 
-    next_node = node.nextNode
+    next_node = node.next_node
     node.data = next_node.data
-    node.nextNode = next_node.nextNode
+    node.next_node = next_node.next_node

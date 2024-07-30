@@ -17,12 +17,12 @@ def return_kth_to_last(node: node_class.Node, k: int) -> node_class.Node:
             # Out of bounds.
             return node_class.Node(0)
 
-        node1 = node1.nextNode
+        node1 = node1.next_node
         k -= 1
 
     node2: node_class.Node = node
-    while node1.nextNode is not None:
-        node2 = node2.nextNode
-        node1 = node1.nextNode
+    while node1.next_node is not None:
+        node2 = node2.next_node
+        node1 = node1.next_node
 
     return node2
